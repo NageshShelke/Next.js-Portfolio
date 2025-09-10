@@ -1,23 +1,30 @@
 // app/layout.js
-import './globals.css'
-import { Inter, Space_Grotesk } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
-const grotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-heading' })
+import Navbar from '@/components/Navbar'
+import './styles/globals.css'
+import {
+  outfit,
+  instrumentSerif,
+  instrumentSerifItalic,
+  nyghtSerifBoldItalic,
+  nyghtSerifMediumItalic,
+} from "@/lib/font";
 
 export const metadata = {
   title: 'Nagesh Shelke — Developer',
   description: 'I am A Frontend Engineer',
-   icons: {
-    icon: 'ns-logo1.png',
+  icons: {
+    icon: 'ns-logo.svg',
   },
-  
+
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${grotesk.variable}`}>
-      <body className="min-h-screen antialiased">{children}</body>
+    <html lang="en" className={`${outfit.variable} ${instrumentSerif.variable} ${instrumentSerifItalic.variable} ${nyghtSerifBoldItalic.variable} ${nyghtSerifMediumItalic.variable}`}>
+      <body className="min-h-screen antialiased">
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   )
 }

@@ -1,9 +1,0 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
-
-
-:root {
-  --bg:#0B0F19; --card:#0F1424; --text:#E6EAF5; --muted:#9AA3B2;
-  --accent:#3B82F6; --accent-2:#22D3EE; --line:#20273A;
-}
-html, body { background: var(--bg); color: var(--text); }

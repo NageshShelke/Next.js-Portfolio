@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+
+:root {
+  --bg:#0B0F19; --card:#0F1424; --text:#E6EAF5; --muted:#9AA3B2;
+  --accent:#3B82F6; --accent-2:#22D3EE; --line:#20273A;
+}
+html, body { background: black; color: white; }
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('/fonts/InstrumentSerif-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('/fonts/InstrumentSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NyghtSerif';
+  src: url('/fonts/NyghtSerif-BoldItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NyghtSerif';
+  src: url('/fonts/NyghtSerif-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
