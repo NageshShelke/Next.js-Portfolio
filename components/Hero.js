@@ -3,7 +3,7 @@ import React from 'react';
 export default function Hero() {
   return (
     <section className="relative box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-full overflow-hidden mb-10">
-      <div className="absolute bg-slate-950 box-border caret-transparent blur-[150px] h-[500px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-[896px] z-0 left-1/2 -translate-x-1/2 top-2/4"></div>
+      <div className="absolute bg-slate-950 box-border caret-transparent blur-[150px] h-[500px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-[896px] z-0 left-1/2 -translate-x-1/2 top-1/2"></div>
       
       <div className="relative items-center box-border caret-transparent flex flex-col justify-center max-w-full outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth z-20 mt-40 mb-2 mx-auto px-3 md:max-w-screen-lg md:mt-36">
         <a href="/projects/next-venture" className="text-sm items-center backdrop-blur-sm bg-[oklab(0.999994_0.0000455678_0.0000200868_/_0.05)] box-border caret-transparent flex leading-5 outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth border rounded-[3.35544e+07px] border-solid border-[oklab(0.999994_0.0000455678_0.0000200868_/_0.1)] md:text-base md:leading-6">

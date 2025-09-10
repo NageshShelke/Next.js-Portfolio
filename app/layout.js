@@ -8,6 +8,7 @@ import {
   nyghtSerifBoldItalic,
   nyghtSerifMediumItalic,
 } from "@/lib/font";
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Nagesh Shelke — Developer',
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen antialiased">
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
