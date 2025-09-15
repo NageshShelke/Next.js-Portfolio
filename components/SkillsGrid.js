@@ -15,7 +15,7 @@ export default function SkillsGrid() {
                 <span className="absolute box-border caret-transparent block outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth left-1/2 top-2.5">
                   <div className="relative box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth mt-9">
                     <img src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-10.svg" alt="Icon" className="box-border caret-transparent h-[148px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-[148px] mx-auto" />
-                    <img alt="Aayush Bharti picture" src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/aayush.webp" className="absolute box-border caret-transparent h-[100px] max-w-full outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-[100px] rounded-[3.35544e+07px] left-1/6 top-1/6" />
+                    <img alt="Aayush Bharti picture" src="Ns-Passport-2.jpeg" className="absolute box-border caret-transparent h-[100px] max-w-full outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-[100px] rounded-[3.35544e+07px] left-1/6 top-1/6" />
                   </div>
                 </span>
                 <span className="box-border caret-transparent hidden outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth md:block"></span>
@@ -142,13 +142,13 @@ export default function SkillsGrid() {
               </div>
               <div className="relative box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth mt-2">
                 <img alt="wings" src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/wings.svg" className="box-border caret-transparent max-w-full outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth" />
-                <img src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-14.svg" alt="Icon" className="absolute box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-8 z-50 left-2/4 top-2/4 md:w-10" />
+                <img src="ns-logo-white.svg" alt="Icon" className="absolute box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-8 z-50  left-27 top-8 md:w-30"/>
               </div>
               <span className="[mask-image:linear-gradient(-75deg,oklch(0.922_0_0)_calc(-80%),rgba(0,0,0,0)_calc(-70%),oklch(0.922_0_0)_calc(0%))] relative text-white/90 text-3xl font-bold box-border caret-transparent block leading-9 max-w-xs outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth text-center w-full py-2 font-instrument_serif md:[mask-image:linear-gradient(-75deg,oklch(0.922_0_0)_calc(-78.7359%),rgba(0,0,0,0)_calc(-68.7359%),oklch(0.922_0_0)_calc(1.2641%))]">Let's work together on your next project</span>
               <div className="relative box-border caret-transparent flex outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth">
                 <button type="button" className="text-[oklab(0.999994_0.0000455678_0.0000200868_/_0.75)] font-light items-center bg-[oklab(0.999994_0.0000455678_0.0000200868_/_0.1)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(255,255,255,0.247)_0px_3px_10px_0px_inset] caret-transparent gap-x-2 flex justify-center outline-[oklab(0.556_0_0_/_0.5)] gap-y-2 scroll-smooth text-center w-full px-8 py-3 rounded-lg">
                   <img src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-8.svg" alt="Icon" className="box-border caret-transparent h-5 outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-5" />
-                  hello@aayushbharti.in
+                 nageshpatil6129@gmail.com
                 </button>
               </div>
             </div>

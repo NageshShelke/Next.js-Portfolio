@@ -17,30 +17,30 @@
 
 /** @type {Project[]} */
 export const projects = [
-  {
-    id: 'next-venture',
-    title: 'Next Ventures',
-    description: 'A space for entrepreneurs to pitch ideas, explore others, and gain exposure with clean design.',
-    href: '/projects/next-venture',
-    imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/18.avif",
-    iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-16.svg"
-  },
-  {
-    id: 'zenith-minds',
-    title: 'Zenith Minds',
-    description: 'A platform connecting students and instructors for enhanced learning experiences.',
-    href: '/projects/zenith-minds',
-    imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/19.avif",
-    iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-17.svg"
-  },
-  {
-    id: 'snippix',
-    title: 'Snippix',
-    description: 'A platform for creating and sharing code snippets with a clean and intuitive design.',
-    href: '/projects/snippix',
-    imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/20.avif",
-    iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-18.svg"
-  },
+  // {
+  //   id: 'next-venture',
+  //   title: 'Next Ventures',
+  //   description: 'A space for entrepreneurs to pitch ideas, explore others, and gain exposure with clean design.',
+  //   href: '/projects/next-venture',
+  //   imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/18.avif",
+  //   iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-16.svg"
+  // },
+  // {
+  //   id: 'zenith-minds',
+  //   title: 'Zenith Minds',
+  //   description: 'A platform connecting students and instructors for enhanced learning experiences.',
+  //   href: '/projects/zenith-minds',
+  //   imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/19.avif",
+  //   iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-17.svg"
+  // },
+  // {
+  //   id: 'snippix',
+  //   title: 'Snippix',
+  //   description: 'A platform for creating and sharing code snippets with a clean and intuitive design.',
+  //   href: '/projects/snippix',
+  //   imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/20.avif",
+  //   iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-18.svg"
+  // },
   {
     id: 'portfolio',
     title: 'Personal Portfolio',
@@ -49,14 +49,14 @@ export const projects = [
     imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/21.avif",
     iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-19.svg"
   },
-  {
-    id: 'star-forge',
-    title: 'StarForge',
-    description: 'A sleek AI SaaS landing page with a user-friendly design that enhances engagement.',
-    href: '/projects/star-forge',
-    imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/31.avif",
-    iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-16.svg"
-  }
+  // {
+  //   id: 'star-forge',
+  //   title: 'StarForge',
+  //   description: 'A sleek AI SaaS landing page with a user-friendly design that enhances engagement.',
+  //   href: '/projects/star-forge',
+  //   imageSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/31.avif",
+  //   iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-16.svg"
+  // }
 ];
 
 /** @type {ProjectTechnology[]} */
@@ -64,13 +64,9 @@ export const projectTechnologies = [
   { id: 'nextjs', name: 'Next.js', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/white.svg" },
   { id: 'react', name: 'React', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/react.svg" },
   { id: 'tailwind', name: 'Tailwind CSS', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/tailwindcss.svg" },
-  { id: 'typescript', name: 'TypeScript', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/typescript.svg" },
-  { id: 'turborepo', name: 'Turborepo', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/turborepo.svg" },
-  { id: 'zod', name: 'Zod', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/zod.svg" },
+
   { id: 'motion', name: 'Motion.dev', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/framer.svg" },
-  { id: 'zustand', name: 'Zustand', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/redux.svg" },
-  { id: 'mongodb', name: 'MongoDB', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/mongodb.svg" },
+  { id: 'zustand', name: 'Zustand', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/redux.svg" },  
   { id: 'nodejs', name: 'NodeJS', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/nodedotjs.svg" },
-  { id: 'express', name: 'ExpressJS', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/white-1.svg" },
-  { id: 'razorpay', name: 'Razorpay', iconSrc: "https://c.animaapp.com/mfbwn9s8eMdF5x/assets/blue-1.svg" }
+
 ];
