@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="relative box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-full overflow-hidden mb-10">
+    <section className="relative box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-full overflow-hidden">
       <div className="absolute bg-slate-950 box-border caret-transparent blur-[150px] h-[500px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-[896px] z-0 left-1/2 -translate-x-1/2 top-1/2"></div>
       
       <div className="relative items-center box-border caret-transparent flex flex-col justify-center max-w-full outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth z-20 mt-40 mb-2 mx-auto px-3 md:max-w-screen-lg md:mt-36">
@@ -30,8 +30,7 @@ export default function Hero() {
             </div>
           </span>
           <span className="text-xl bg-clip-text bg-[linear-gradient(oklch(0.97_0_0)_0px,oklch(0.556_0_0)_100%)] box-border block tracking-[1px] leading-[32.5px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth md:text-2xl md:tracking-[1.2px] md:leading-[39px]">a Frontend Developer</span>
-        </h1>
-        
+        </h1>        
         <div className="items-center box-border caret-transparent gap-x-6 flex flex-col justify-center outline-[oklab(0.556_0_0_/_0.5)] gap-y-6 scroll-smooth z-[100] mt-4 md:gap-x-10 md:flex-row md:gap-y-10 md:mt-8">
           <button className="relative font-medium items-center backdrop-blur-sm bg-[oklab(0.999994_0.0000455678_0.0000200868_/_0.1)] caret-transparent flex justify-between opacity-85 outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth text-center border overflow-hidden pl-2 pr-[3px] py-[3px] rounded-[3.35544e+07px] border-solid border-[oklab(0.999994_0.0000455678_0.0000200868_/_0.1)] md:pl-3 md:pr-1 md:py-1">
             <span className="text-white box-border caret-transparent block outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth z-10 px-3">Let's Connect</span>

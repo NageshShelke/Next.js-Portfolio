@@ -5,7 +5,7 @@ import TechSkillsMarquee from "./ui/TechSkillsMarquee"
 export default function SkillsGrid() {
   return (
     <div className="box-border caret-transparent max-w-screen-xl outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-full px-4">
-      <div className="box-border caret-transparent gap-x-4 grid auto-rows-auto grid-cols-[repeat(6,minmax(0px,1fr))] max-w-none outline-[oklab(0.556_0_0_/_0.5)] gap-y-4 scroll-smooth w-full mt-0 mb-20 mx-auto md:auto-rows-[304px] md:max-w-full md:mt-20">
+      <div className="box-border caret-transparent gap-x-4 grid auto-rows-auto grid-cols-[repeat(6,minmax(0px,1fr))] max-w-none outline-[oklab(0.556_0_0_/_0.5)] gap-y-4 scroll-smooth w-full mt-0 mb-20 mx-auto md:auto-rows-[304px] md:max-w-full">
         {/* Collaboration Card */}
         <div className="relative shadow-[rgba(255,255,255,0.12)_0px_-20px_80px_-20px_inset] box-border caret-transparent flex flex-col col-end-[span_6] col-start-[span_6] h-[336px] justify-between outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-full border overflow-hidden rounded-[14px] border-solid border-white/10 md:col-end-[span_4] md:col-start-[span_4] md:h-full">
           <div className="box-border caret-transparent h-full outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-full">

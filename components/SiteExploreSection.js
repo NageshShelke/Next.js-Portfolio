@@ -8,7 +8,7 @@ export default function SiteExploreSection() {
         <p className="text-[oklab(0.999994_0.0000455677_0.0000200868_/_0.7)] text-xs font-normal box-border caret-transparent tracking-[1.2px] leading-4 outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth uppercase mb-3 md:text-sm md:tracking-[1.4px] md:leading-5">My Site</p>
         <span className="text-5xl box-border caret-transparent tracking-[-1.2px] leading-[48px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth font-instrument_serif md:text-6xl md:tracking-[-1.5px] md:leading-[60px]">
           <span className="text-5xl box-border caret-transparent tracking-[-1.2px] leading-[48px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth md:text-6xl md:tracking-[-1.5px] md:leading-[60px]">Explore, experiment</span>
-          <span className="text-5xl italic bg-clip-text bg-[linear-gradient(288deg,rgb(255,128,0),rgb(255,0,204)_53.2394%,rgb(0,68,255))] bg-size-[200%_200%] box-border caret-transparent tracking-[-1.2px] leading-[48px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth pr-2 md:text-6xl md:tracking-[-1.5px] md:leading-[60px]"><br/>&& say hello</span>
+          <span className="text-5xl italic text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-pink-500 to-red-400 bg-size-[200%_200%] box-border caret-transparent tracking-[-1.2px] leading-[48px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth pr-2 md:text-6xl md:tracking-[-1.5px] md:leading-[60px]"><br/>&& say hello</span>
         </span>
       </h2>
       

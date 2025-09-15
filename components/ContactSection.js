@@ -17,7 +17,7 @@ export default function ContactSection() {
         
         <div className="relative box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth">
           <img src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/wings.svg" alt="wings" className="box-border caret-transparent max-w-full outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth" />
-          <img src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-14.svg" alt="Icon" className="absolute box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-8 z-50 left-37 top-1/3 md:w-10" />
+          <img src="ns-logo-white.svg" alt="Icon" className="absolute box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-8 z-50 left-27 top-8 md:w-30" />
         </div>
         
         <span className="text-white text-2xl font-light box-border caret-transparent block tracking-[0.6px] leading-[31.9999px] outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth mt-4 md:text-5xl md:tracking-[1.2px] md:leading-[48px]">

@@ -1,69 +1,100 @@
-import React from 'react';
-import { socialLinks } from '../data/sociallinks';
+import React from "react"
+import Image from "next/image"
+import { socialLinks } from "../data/sociallinks"
 
 export default function AboutSection() {
   return (
-    <section className="relative box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth overflow-hidden px-4">
-      <div className="static box-content caret-black max-h-none outline-black scroll-auto py-0 md:relative md:aspect-auto md:box-border md:caret-transparent md:max-h-[1300px] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:py-10 md:scroll-m-0 md:scroll-p-[auto]">
-        <section className="static [align-items:normal] box-content caret-black gap-x-[normal] block h-auto justify-normal max-w-none outline-black gap-y-[normal] scroll-auto w-auto mx-0 md:relative md:items-center md:aspect-auto md:box-border md:caret-transparent md:gap-x-8 md:flex md:h-full md:justify-between md:max-w-6xl md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-8 md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:mx-auto md:scroll-m-0 md:scroll-p-[auto]">
-          
-          
-          <div className="box-content caret-black max-w-none min-h-0 min-w-0 outline-black scroll-auto md:aspect-auto md:box-border md:caret-transparent md:max-w-[60%] md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-            <h2 className="static text-2xl font-bold box-content caret-black tracking-[normal] leading-[normal] outline-black scroll-auto text-start z-auto my-0 md:relative md:text-6xl md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-1.5px] md:leading-[60px] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:text-left md:decoration-auto md:underline-offset-auto md:z-[2] md:[mask-position:0%] md:bg-left-top md:mt-28 md:mb-8 md:scroll-m-0 md:scroll-p-[auto]">
-              <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] outline-black scroll-auto normal-case mb-0 md:text-[oklab(0.999994_0.0000455677_0.0000200868_/_0.7)] md:text-sm md:aspect-auto md:box-border md:caret-transparent md:tracking-[1.4px] md:leading-5 md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:uppercase md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:mb-3 md:scroll-m-0 md:scroll-p-[auto]">KNOW ABOUT ME</p>
-              <span className="box-content caret-black outline-black scroll-auto font-times md:aspect-auto md:box-border md:caret-transparent md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-instrument_serif">
-                <span className="box-content caret-black outline-black scroll-auto md:aspect-auto md:box-border md:caret-transparent md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">Full-Stack Developer and a little bit of </span>
-                <span className="not-italic bg-clip-border bg-none bg-auto box-content caret-black outline-black scroll-auto pr-0 md:italic md:aspect-auto md:bg-clip-text md:bg-[linear-gradient(288deg,rgb(255,128,0),rgb(255,0,204)_53.2394%,rgb(0,68,255))] md:bg-size-[200%_200%] md:box-border md:caret-transparent md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:pr-2 md:scroll-m-0 md:scroll-p-[auto]">everything</span>
+    <section className="relative overflow-hidden px-4 md:py-10">
+      <div className="md:relative md:max-h-[1300px] md:py-10">
+        <section className="flex flex-col md:flex-row md:items-center md:justify-between md:max-w-6xl md:mx-auto md:gap-8">
+          {/* LEFT SECTION */}
+          <div className="md:max-w-[60%]">
+            <h2 className="text-2xl font-bold md:text-6xl md:font-medium md:leading-[60px] md:mt-28 md:mb-8">
+              <p className="text-base font-normal mb-3 md:text-sm md:tracking-[1.4px] uppercase">
+                KNOW ABOUT ME
+              </p>
+              <span className="font-instrument_serif">
+                Full-Stack Developer and a little bit of{" "}
+                <span className="italic bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-pink-500 to-blue-600 bg-[length:200%_200%]">
+                  everything
+                </span>
               </span>
             </h2>
-            
-            <div className="static text-black text-base font-normal box-content caret-black block flex-row tracking-[normal] leading-[normal] max-w-none outline-black gap-y-[normal] scroll-auto text-start z-auto md:relative md:text-[oklch(0.87_0_0)] md:text-lg md:font-light md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:tracking-[0.9px] md:leading-[28.0001px] md:max-w-[550px] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-8 md:scroll-smooth md:snap-align-none md:sna    p-normal md:snap-none md:text-left md:decoration-auto md:underline-offset-auto md:z-[5] md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-              <p className="box-content caret-black min-h-0 min-w-0 outline-black scroll-auto md:aspect-auto md:box-border md:caret-transparent md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                I'm Aayush Bharti, a proactive full-stack developer passionate about creating dynamic web experiences. 
-                From frontend to backend, I thrive on solving complex problems with clean, efficient code. 
-                My expertise spans React, Next.js, and Node.js, and I'm always eager to learn more.
+
+            {/* ABOUT TEXT */}
+            <div className="text-base md:text-lg md:font-light md:leading-7 md:max-w-[550px] md:space-y-6">
+              <p>
+                I'm Nagesh Shelke, a proactive frontend developer passionate
+                about creating dynamic web experiences. From frontend to
+                backend, I thrive on solving complex problems with clean,
+                efficient code.
               </p>
-              <p className="box-content caret-black min-h-0 min-w-0 outline-black scroll-auto md:aspect-auto md:box-border md:caret-transparent md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                When I'm not immersed in work, I'm exploring new ideas and staying curious. 
-                Life's about balance, and I love embracing every part of it.
+              <p>
+                When I'm not immersed in work, I'm exploring new ideas and
+                staying curious. Life's about balance, and I love embracing
+                every part of it.
               </p>
-              <p className="box-content caret-black min-h-0 min-w-0 outline-black scroll-auto md:aspect-auto md:box-border md:caret-transparent md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                I believe in waking up each day eager to make a difference!
-              </p>
-              
-              <div className="box-content caret-black gap-x-[normal] block min-h-0 min-w-0 outline-black gap-y-[normal] scroll-auto w-auto mt-0 md:aspect-auto md:box-border md:caret-transparent md:gap-x-3 md:flex md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-3 md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-fit md:[mask-position:0%] md:bg-left-top md:-mt-4 md:scroll-m-0 md:scroll-p-[auto]">
+              <p>I believe in waking up each day eager to make a difference!</p>
+
+              {/* SOCIAL LINKS */}
+              <div className="flex gap-3 -mt-2">
                 {socialLinks.map((link) => (
-                  <button key={link.id} className="bg-zinc-100 caret-black inline-block min-h-0 min-w-0 outline-black scroll-auto text-center md:aspect-auto md:bg-transparent md:caret-transparent md:block md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:p-0 md:scroll-m-0 md:scroll-p-[auto]">
-                    <a href={link.href} className="box-content caret-black outline-black scroll-auto md:aspect-auto md:box-border md:caret-transparent md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                      <span className="static box-content caret-black inline h-auto outline-black scroll-auto text-wrap w-auto md:absolute md:aspect-auto md:box-border md:caret-transparent md:block md:h-px md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:w-px md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:-m-px md:scroll-m-0 md:scroll-p-[auto]">{link.name}</span>
-                      <img src={link.iconSrc} alt="Icon" className="box-content caret-black h-auto outline-black scroll-auto w-auto md:aspect-auto md:box-border md:caret-transparent md:h-5 md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-5 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]" />
-                    </a>
-                  </button>
+                  <a
+                    key={link.id}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 hover:opacity-80 transition"
+                  >
+                    <Image
+                      src={link.iconSrc}
+                      alt={link.name}
+                      width={20}
+                      height={20}
+                    />
+                  </a>
                 ))}
               </div>
             </div>
-            
-            <a href="/about#experience" className="text-black [align-items:normal] box-content caret-black gap-x-[normal] inline justify-normal outline-black gap-y-[normal] scroll-auto w-auto mt-0 md:text-neutral-100 md:items-center md:aspect-auto md:box-border md:caret-transparent md:gap-x-2 md:flex md:justify-start md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-2 md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-fit md:[mask-position:0%] md:bg-left-top md:mt-10 md:scroll-m-0 md:scroll-p-[auto]">
+
+            {/* CTA */}
+            <a
+              href="/about#experience"
+              className="flex items-center gap-2 mt-10 text-neutral-800 md:text-neutral-100"
+            >
               Work Experience
-              <div className="bg-transparent box-content caret-black h-auto min-h-0 min-w-0 outline-black scroll-auto w-auto rounded-none md:aspect-auto md:bg-[oklab(0.999994_0.0000455678_0.0000200868_/_0.05)] md:box-border md:caret-transparent md:h-[25px] md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-[25px] md:border md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:rounded-[3.35544e+07px] md:border-solid md:border-[oklab(0.999994_0.0000455678_0.0000200868_/_0.1)]">
-                <div className="box-content caret-black block outline-black scroll-auto w-auto md:aspect-auto md:box-border md:caret-transparent md:flex md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-12 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                  <span className="box-content caret-black inline h-auto min-h-0 min-w-0 outline-black scroll-auto w-auto md:aspect-auto md:box-border md:caret-transparent md:flex md:h-6 md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-6 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                    <img src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-25.svg" alt="Icon" className="box-content caret-black h-auto outline-black scroll-auto w-auto md:aspect-auto md:box-border md:caret-transparent md:h-3.5 md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-3.5 md:[mask-position:0%] md:bg-left-top md:m-auto md:scroll-m-0 md:scroll-p-[auto]" />
-                  </span>
-                  <span className="box-content caret-black inline h-auto min-h-0 min-w-0 outline-black scroll-auto w-auto md:aspect-auto md:box-border md:caret-transparent md:flex md:h-6 md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-6 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                    <img src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-25.svg" alt="Icon" className="box-content caret-black h-auto outline-black scroll-auto w-auto md:aspect-auto md:box-border md:caret-transparent md:h-3.5 md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-3.5 md:[mask-position:0%] md:bg-left-top md:m-auto md:scroll-m-0 md:scroll-p-[auto]" />
-                  </span>
-                </div>
+              <div className="w-[25px] h-[25px] flex items-center justify-center rounded-full border border-neutral-300 md:border-neutral-700">
+                <Image
+                  src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/icon-25.svg"
+                  alt="Arrow Icon"
+                  width={14}
+                  height={14}
+                />
               </div>
             </a>
           </div>
-          
-          <div className="static box-content caret-black block justify-normal min-h-0 min-w-0 outline-black scroll-auto w-auto mr-0 mt-0 md:relative md:content-center md:aspect-square md:box-border md:caret-transparent md:grid md:justify-center md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-[500px] md:[mask-position:0%] md:bg-left-top md:mr-10 md:mt-20 md:scroll-m-0 md:scroll-p-[auto]">
-            <img alt="AB Logo" src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/ab-icon-sq.986c7efa.svg" className="static text-black box-content h-auto max-w-none outline-black scroll-auto w-auto inset-auto md:absolute md:text-transparent md:aspect-auto md:box-border md:h-full md:max-w-full md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:inset-0" />
-            <img alt="Aayush Bharti blue pic" sizes="100vw" src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/42.avif" className="static text-black box-content h-auto max-w-none object-fill outline-black scroll-auto w-auto rounded-none inset-auto md:absolute md:text-transparent md:aspect-auto md:box-border md:h-full md:max-w-full md:object-cover md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:rounded-[58px] md:inset-0" />
+
+          {/* RIGHT SECTION */}
+          <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[500px] mt-10 md:mt-20">
+            {/* Background Logo */}
+            <Image
+              src="https://c.animaapp.com/mfbwn9s8eMdF5x/assets/ab-icon-sq.986c7efa.svg"
+              alt="AB Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+            {/* Profile Image */}
+            <Image
+              src="/Ns-Passport.jpeg"
+              alt="Nagesh Shelke"
+              fill
+              className="object-cover rounded-[58px]"
+              priority
+            />
           </div>
         </section>
       </div>
     </section>
-  );
+  )
 }
