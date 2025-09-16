@@ -7,7 +7,7 @@ import {
   instrumentSerifItalic,
   nyghtSerifBoldItalic,
   nyghtSerifMediumItalic,
-} from "@/lib/font";
+} from "../lib/font";
 import Footer from '@/components/Footer';
 
 export const metadata = {

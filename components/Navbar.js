@@ -1,11 +1,12 @@
 "use client"
 
 import React, { useState } from 'react';
+import Link from "next/link"; 
 
 const navigationItems = [
   { id: 'home', label: 'Home', href: '/' },
   { id: 'about', label: 'About', href: '/about' },
-  { id: 'work', label: 'Work', href: '/projects' },
+  { id: 'work', label: 'Work', href: '/work' },
   { id: 'blog', label: 'Blog', href: '/blog' }
 ];
 
@@ -20,16 +21,16 @@ export default function Header() {
   return (
     <header className="relative box-border caret-transparent outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth z-[5000]">
       <nav className="fixed items-center box-border caret-transparent flex justify-between max-w-screen-xl outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-full pl-6 pr-4 py-1.5 left-1/2 -translate-x-1/2 top-2.5 md:top-4">
-        <a aria-label="Homepage" href="/" className="box-border caret-transparent hidden h-8 min-h-0 min-w-0 outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-8 p-1 md:block md:h-9 md:min-h-[auto] md:min-w-[auto] md:w-9">
+        <Link aria-label="Homepage" href="/" className="box-border caret-transparent hidden h-8 min-h-0 min-w-0 outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth w-8 p-1 md:block md:h-9 md:min-h-[auto] md:min-w-[auto] md:w-9">
           NS
-        </a>
+        </Link>
         
         <div className="relative box-border caret-transparent flex justify-center outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth mx-auto">
           <ul className="relative items-center backdrop-blur-2xl bg-[oklab(0.999994_0.0000455678_0.0000200868_/_0.1)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_20px_25px_-5px,rgba(0,0,0,0.1)_0px_8px_10px_-6px] box-border caret-transparent flex justify-center list-none min-h-10 outline-[oklab(0.556_0_0_/_0.5)] scroll-smooth border p-1 rounded-[22px] border-solid border-[oklab(0.999994_0.0000455678_0.0000200868_/_0.1)]">
             <div className="[align-items:normal] box-content caret-black block min-h-0 min-w-0 outline-black scroll-auto md:items-center md:aspect-auto md:box-border md:caret-transparent md:flex md:blur-0 md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
               {navigationItems.map((item) => (
                 <li key={item.id} className="static box-content caret-black min-h-0 min-w-0 outline-black scroll-auto text-left md:relative md:aspect-auto md:box-border md:caret-transparent md:min-h-[auto] md:min-w-[auto] md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                  <a href={item.href} className="text-black text-base font-normal box-content caret-black inline leading-[normal] outline-black scroll-auto p-0 md:text-[oklab(0.999994_0.0000455677_0.0000200868_/_0.7)] md:text-sm md:font-light md:aspect-auto md:box-border md:caret-transparent md:block md:leading-5 md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:px-4 md:py-1.5 md:scroll-m-0 md:scroll-p-[auto]">{item.label}</a>
+                  <Link href={item.href} className="text-black text-base font-normal box-content caret-black inline leading-[normal] outline-black scroll-auto p-0 md:text-[oklab(0.999994_0.0000455677_0.0000200868_/_0.7)] md:text-sm md:font-light md:aspect-auto md:box-border md:caret-transparent md:block md:leading-5 md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:px-4 md:py-1.5 md:scroll-m-0 md:scroll-p-[auto]">{item.label}</Link>
                   {item.id === 'home' && (
                     <span className="static bg-transparent box-content caret-black inline outline-black scroll-auto w-auto z-auto rounded-none inset-auto md:absolute md:aspect-auto md:bg-[oklab(0.999994_0.0000455678_0.0000200868_/_0.1)] md:box-border md:caret-transparent md:block md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:-z-10 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:rounded-[3.35544e+07px] md:inset-0">
                       <div className="static bg-transparent box-content caret-black h-auto outline-black scroll-auto w-auto rounded-t-none left-auto top-auto md:absolute md:aspect-auto md:bg-[oklch(0.922_0_0)] md:box-border md:caret-transparent md:h-1 md:outline-[oklab(0.556_0_0_/_0.5)] md:overscroll-x-auto md:overscroll-y-auto md:scroll-smooth md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:top-[-9px] md:w-8 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:rounded-t-[3.35544e+07px] md:left-2/4">
